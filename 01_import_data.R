@@ -1,23 +1,21 @@
-# check whether 01_import_data.R 
-# was saved inside your local phansok-learn.github.io folde
-# Step 1 — Run this in RStudio Console
-getwd() #if "C:/Users/..." yes, it saved
+# check whether 01_import_data.R was saved inside the local phansok-learn.github.io folder
+# Step 1 — In Console
+getwd() #should see
 [1] "C:/Users/seiha/Documents/phansok-learn.github.io"
 
 
 # Step 2 — Create and save the script in the correct folder
-# in Console
+# In Console
 dir.create("R", showWarnings = FALSE)
 
-# in R
+# In R
 dir.exists("R")
 [1] TRUE
 
-# Step 3 — Save your R script
+# Step 3 — Save R script, follows 1-4
 # 1. Click File → New File → R Script.
 # 2. Paste this code:
 file_path <- "C:/Users/seiha/Downloads/r_350.csv"
-
 random_350 <- read.csv(file_path)
 
 # Verify the imported dataset
